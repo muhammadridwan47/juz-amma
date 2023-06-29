@@ -12,9 +12,9 @@
         android:theme="@style/Theme.AplikasiUntukUTS"
         tools:targetApi="31">
         <activity
-            android:name=".MenuUtamaActivity"
-            android:screenOrientation="landscape"
-            android:exported="true" >
+            android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,18 +22,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:screenOrientation="landscape"
+            android:name=".MenuUtamaActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
             android:name=".MenuPengaturanActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
-            android:screenOrientation="landscape"
             android:name=".MenuPembelajaranActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
-            android:screenOrientation="landscape"
             android:name=".MenuInfoActivity"
-            android:exported="false" />
-
+            android:exported="false"
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>
